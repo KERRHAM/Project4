@@ -1,5 +1,5 @@
 """
-ASGI config for Ice_bath project.
+ASGI config for ice_bath project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Ice_bath.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ice_bath.settings')
 
 application = get_asgi_application()
