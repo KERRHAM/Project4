@@ -10,8 +10,8 @@ class Post(models.Model):
     author = models.ForeignKey(
     User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
+    content = models.TextField(null=True)
+    created_on = models.DateTimeField(null=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
 class Comment(models.Model):
