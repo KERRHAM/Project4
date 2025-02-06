@@ -3,7 +3,7 @@ from . models import about
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
-@admin.register(About)
+@admin.register(about)
 class AboutAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('content',)
