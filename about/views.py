@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from .models import about
-
+from .models import About
 
 # Create your views here.
 
@@ -8,7 +7,7 @@ def about_me(request):
     """
     Renders the About page
     """
-    about = about.objects.all().order_by('-updated_on').first()
+    about = About.objects.all().order_by('-updated_on').first()
 
     return render(
         request,
