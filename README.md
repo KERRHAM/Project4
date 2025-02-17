@@ -67,14 +67,44 @@
 ## Testing 
 
 ### Validator Testing 
- 
+  
+  For testing my project I created 2 test files, 1 for views and other for my forms 
+  (test_views.py/test_forms.py), Within thoses files I Created functions to test all features of the website.
 
 ### Unfixed Bugs
 
 ## Deployment
 
+### Deploying to Heroku
+
+To deploy with Heroku, Code Institute Python Essentials Template was used so the python code can be viewed in a terminal in a browser
+1. Log in to Heroku or create a new account
+2. On the main page click "New" and select "Create new app"
+3. Choose your unique app name and select your region
+4. Click "Create app"
+5. On the next page find "settings" and locate "Config Vars"
+6. Click "Reveal Config Vars" and add "PORT" key and value "8000", click "Add"
+7. Scroll down, locate "Buildpack" and click "Add", select "Python"
+8. Repeat step 7. only this time add "Node.js", make sure "Python" is first
+9. Scroll to the top and select "Deploy" tab
+10. Select GitHub as deployment method and search for your repository and link them together
+11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy"
+12. Deployed site 
+
+### Forking the GitHub Repository
+
+By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
+
+1. Log in to GitHub and locate 
+2. At the top of the Repository(under the main navigation) locate "Fork" button.
+3. Now you should have a copy of the original repository in your GitHub account.
+
+
 ## Credits 
 
 ### Content 
+- For Styling my page I used the [Bootstrap](https://getbootstrap.com/) framework.
+- Instructions on how to implement form validation on the Sign Up page was taken from the 
+  guidance from code institute
 
 ### Media
