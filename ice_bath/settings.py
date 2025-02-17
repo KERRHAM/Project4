@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import sys
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -27,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-u6j%v*!#06@y_j4fcl()dg(=%gaz2-bqug_%@5bkr-3&(2e(h0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kerrham-project4-d69dw4cn6up.ws-eu117.gitpod.io', 
                  '.herokuapp.com']
@@ -106,6 +107,9 @@ WSGI_APPLICATION = 'ice_bath.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+if 'test' in sys.argv:
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-kerrham-project4-d69dw4cn6up.ws-eu117.gitpod.io",

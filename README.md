@@ -1,131 +1,80 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ICEBATH
+  Ice Bath is a online community page aimed at the Open cold water/Ice bath at home community, the aim is to bring users togeather from all over the UK & Ireland to share their experiences, adventures, favourite spots they've visited and any benefits/ advice they want to share with new users.
 
-Welcome Kerr Hamilton,
+  ![am-I-responsive](https://github.com/user-attachments/assets/3e4db4da-5f13-41a5-9429-4d49c45c8142)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+### Existing Features
 
-## Gitpod Reminders
+* Navigation bar
+  
+  When a user is logged in the navbar will show Home, share and logout
+  these 3 links are present because the user is logged in and has access to share with the community
+  
+  ![Image](https://github.com/user-attachments/assets/005e64e4-23bd-4e09-b09b-11ad3ea30943)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+  When a user is not registered/logged in the navbar will have the following links
+  Home, register and login. There is no share link because a user needs to be logged in to share posts to the community.
 
-`python3 -m http.server`
+  ![Image](https://github.com/user-attachments/assets/2970aacd-3ab5-4b92-a078-5843cbf908ec)
 
-A blue button should appear to click: _Make Public_,
+* Home page
+ 
+  The homepage has a welcome message to the user informing them of the purpose of the page and how they can post on the website. Below the welcome message are where all the posts are displayed with the title, author and created on displayed. There also next and prev buttons to move through all the posts.
 
-Another blue button should appear to click: _Open Browser_.
+  ![Image](https://github.com/user-attachments/assets/8664671a-7b58-4b61-92b8-48dd37247001)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+  ![Image](https://github.com/user-attachments/assets/2ef86365-177d-469e-835b-281e4dd86439)
 
-A blue button should appear to click: _Make Public_,
+* Post
+  
+  When selected post is clicked on the posts content is displayed 
 
-Another blue button should appear to click: _Open Browser_.
+  ![Image](https://github.com/user-attachments/assets/bdd84a87-01f9-47c5-8ec2-126d94c785cc)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Comment section
+   
+   Below the post there is a comment section were the user can comment on posts, edit/delete their own comments. Users can only comment on posts when logged in, users can only edit/delete their own comments.
 
-To log into the Heroku toolbelt CLI:
+   ![Image](https://github.com/user-attachments/assets/22da9a21-25d7-4d29-a945-91479cc382e4)
+   ![Image](https://github.com/user-attachments/assets/ea26b3b4-0c75-4edb-bab9-1a807f2a95e4)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* Share post
+  
+  When the user decides they want to share a post with the community they will press the share link, and fill in the form followed by the submit button. User has to fill in all 3 fields to submit.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+  ![Image](https://github.com/user-attachments/assets/134b1861-d231-4d7c-873d-34663602fb5f)
+  ![Image](https://github.com/user-attachments/assets/9588afdc-a0b1-41e7-9499-a54928267406)
+* logout
+  
+  When the user decides to signout, once the logout link has been clicked a message will appear to confirm they want to log out.
+  ![Image](https://github.com/user-attachments/assets/a0279147-d17f-4412-b8ad-b02743990f79)
 
-### Connecting your Mongo database
+* Register
+  
+  When the user goes to register to be able to post and comment on the website the following page will be displayed. The email address is optional but all other fields must be filled.
+  ![Image](https://github.com/user-attachments/assets/41397019-8172-4789-b2d0-4563d8302dae)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+* Sign in
 
-------
+  When the user visits the page and already registered the sign in link will display a page asking the user to sign in to be able to post and comment on the website.
+  ![Image](https://github.com/user-attachments/assets/0d71ab67-2c06-4041-b97e-999b5469455f)
 
-## Release History
+### Features Left to Implement
+ * Reset passoword if user forgets login details
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Testing 
 
-**June 18, 2024,** Add Mongo back into template
+### Validator Testing 
+ 
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+### Unfixed Bugs
 
-**May 28 2024:** Fix Mongo and Links installs
+## Deployment
 
-**April 26 2024:** Update node version to 16
+## Credits 
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Content 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Media
