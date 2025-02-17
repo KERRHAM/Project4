@@ -103,8 +103,12 @@ By forking the repository, we make a copy of the original repository on our GitH
 ## Credits 
 
 ### Content 
-- For Styling my page I used the [Bootstrap](https://getbootstrap.com/) framework.
+- For adding some of my css to this project I used the [Bootstrap](https://getbootstrap.com/) framework.
 - Instructions on how to implement form validation on the Sign Up page was taken from the 
   guidance from code institute
+- [W3 Schools](https://www.w3schools.com/) was very helpful for keeping me right when 
+  working with Django and creating models.
 
 ### Media
+- [Pexels](https://www.pexels.com/) was used for my images.
+- [Fontawesome](https://fontawesome.com/) was used to add icons to webpage.
