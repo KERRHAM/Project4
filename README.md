@@ -1,6 +1,8 @@
 # ICEBATH
   Ice Bath is a online community page aimed at the Open cold water/Ice bath at home community, the aim is to bring users togeather from all over the UK & Ireland to share their experiences, adventures, favourite spots they've visited and any benefits/ advice they want to share with new users.
 
+  Here is the link to my website, [IceBath](https://ice-bath-9490edd50f38.herokuapp.com/)
+
   ![am-I-responsive](https://github.com/user-attachments/assets/3e4db4da-5f13-41a5-9429-4d49c45c8142)
 
 ## Features
@@ -58,20 +60,50 @@
 
 * Sign in
 
-  When the user visits the page and already registered the sign in link will display a page asking the user to sign in to be able to post and comment on the website.
+  When the user visits the page and wants to log in, the sign in link when clicked will display a page asking the user to sign in to be able to post and comment on the website.
   ![Image](https://github.com/user-attachments/assets/0d71ab67-2c06-4041-b97e-999b5469455f)
 
 ### Features Left to Implement
- * Reset passoword if user forgets login details
+ * Reset passoword if user forgets login details.
+ * Add profile pictures to posts next to author.
 
 ## Testing 
 
-### Validator Testing 
+### Manual Testing
   
-  For testing my project I created 2 test files, 1 for views and other for my forms 
-  (test_views.py/test_forms.py), Within thoses files I Created functions to test all features of the website.
+   * I tested that this project works on diffrent browsers: Safari and Chrome
+
+   * I confirmed my website is responsive, the layout looks great on all the different screen size thanks to  
+        chromes developer tools.
+
+   * I confirmed that the home, share, register, sign-in, sign-out and viewpost pages text are all readable and easy to 
+        understand.
+
+   * I have confirmed my website works, All posts open when clicked on, user can only comment when logged in, navbar has different links depending on users authentication and all forms work without errors
+
+
+### Validator Testing 
+- HTML
+   
+   There were no errors found when using the offical Validator [W3C Validator](https://validator.w3.org/nu/).
+
+
+- CSS
+   
+   There were no errors found when using the offical Validator [jigsaw Validator](https://jigsaw.w3.org/css-validator/).
+
+- Javascript
+   
+   For testing all my javascript code I used [JShint](https://jshint.com/)
+
+- Django 
+  
+  For testing my django code I created 2 test files for my about and blog apps, 1 for views and other for my forms (test_views.py/test_forms.py), Within thoses files I Created functions to test all features of the website. Tests were run via the terminal, total of 8 tests were carried out.
+  
+  ![Image](https://github.com/user-attachments/assets/62f16b73-6536-44bf-ae31-9a0dba80caca)
 
 ### Unfixed Bugs
+   * No Unfixed Bugs
 
 ## Deployment
 
@@ -89,21 +121,12 @@ To deploy with Heroku, Code Institute Python Essentials Template was used so the
 9. Scroll to the top and select "Deploy" tab
 10. Select GitHub as deployment method and search for your repository and link them together
 11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy"
-12. Deployed site 
-
-### Forking the GitHub Repository
-
-By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
-
-1. Log in to GitHub and locate 
-2. At the top of the Repository(under the main navigation) locate "Fork" button.
-3. Now you should have a copy of the original repository in your GitHub account.
-
+12. Deployed site [IceBath](https://ice-bath-9490edd50f38.herokuapp.com/)
 
 ## Credits 
 
 ### Content 
-- For adding some of my css to this project I used the [Bootstrap](https://getbootstrap.com/) framework.
+- For adding additional css to this project I used the [Bootstrap](https://getbootstrap.com/) framework.
 - Instructions on how to implement form validation on the Sign Up page was taken from the 
   guidance from code institute
 - [W3 Schools](https://www.w3schools.com/) was very helpful for keeping me right when 
